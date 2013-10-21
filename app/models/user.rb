@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-    #question and answer about it later
+    #ask about it later
 	attr_accessor :name, :email, :age
 
 	validates :name, :presence => true, :allow_blank => false
