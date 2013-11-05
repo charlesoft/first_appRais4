@@ -19,7 +19,7 @@
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Features</a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">A Empresa</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">UI Elements</a></li>
                                     <li><a href="#">Buttons</a></li>
@@ -28,7 +28,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Serviços</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">About Us</a></li>
                                     <li><a href="#">Our Team</a></li>
@@ -38,7 +38,7 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio</a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Contato</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Portfolio 2 Columns</a></li>
                                     <li><a href="#">Portfolio 3 Columns</a></li>
@@ -47,14 +47,13 @@
                                 </ul>
                             </li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog</a>
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fale Conosco</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Blog Layout 1</a></li>
                                     <li><a href="#">Blog Layout 2</a></li>
                                     <li><a href="#">Blog Item</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#">Contact</a></li>
                         </ul>
                         <!-- /.nav -->
                     </div>
@@ -113,7 +112,7 @@
             data-y="0"
             data-speed="300"
             data-start="3000"
-            data-easing="easeOutExpo"  ><%= image_tag 'imac_slide.jpg' %></div>
+            data-easing="easeOutExpo"  ><%= image_tag 'imac_slide.png' %></div>
         </li>
         <!-- THE 2ND SLIDE -->
         <li data-transition="slideleft" data-slotamount="10" data-masterspeed="300">
@@ -221,27 +220,27 @@
             <div class="col-md-4 ">
                 <div class="service">
                     <span class="service-icon">
-                        <i class="icon-laptop"></i>
+                        <%=fa_icon "laptop" %>
                     </span>
-                    <h4>Responsive Design</h4>
+                    <h4>A Empresa</h4>
                     <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service">
                     <span class="service-icon">
-                        <i class="icon-code"></i>
+                        <%=fa_icon "gear" %>
                     </span>
-                    <h4>Clean & Simple</h4>
+                    <h4>Serviços</h4>
                     <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="service">
                     <span class="service-icon">
-                        <i class="icon-cog"></i>
+                        <%=fa_icon "envelope-o" %>
                     </span>
-                    <h4>Easy To Customize</h4>
+                    <h4>Fale Conosco</h4>
                     <p>Donec in velit vel ipsum auctor pulvinar. Vesti bulum iaculis lacinia est. Proin dictum elementum velit. Fusce euismod auctor pulvinar.</p>
                 </div>
             </div>
@@ -249,253 +248,8 @@
     </div>
     <!-- /.container -->
 </section>
-<!-- /.our-services -->
-<section class="colored-wrapper">
-    <div class="container wrapper-2">
-        <h5 class="subpage-title">
-            <span>Recent Works</span>
-            <!-- Controls -->
-            <span id="portfolio-next" class="next black"><i class="icon-angle-right"></i></span>
-            <span id="portfolio-prev" class="prev black"><i class="icon-angle-left"></i></span>
-        </h5>
-        <div class="row">
-            <div id="caroufredsel-portfolio-container">
-                <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item-wrapper">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <%= image_tag 'photo(1).jpg' %>
-                            <div class="image-overlay"></div>
-                           <%= link_to image_tag 'photo (1).jpg', :rel => 'prettyPhoto[pp_gal]', :class => 'portfolio-zoom' %>><i class="icon-eye-open"></i></a>
-                            <a href="#" class="portfolio-link"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="portfolio-content">
-                            <h5>1st Portfolio Item</h5>
-                            <p>Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.portfolio-item-wrapper -->
-                <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item-wrapper">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <%= image_tag 'photo (12).jpg' %>
-                            <div class="image-overlay"></div>
-                            <%= link_to image_tag 'photo (12).jpg', :rel => 'prettyPhoto[pp_gal]', :class => 'portfolio-zoom' %>
-                            <i class="icon-eye-open"></i></a>
-                            <a href="portfolio-single.html" class="portfolio-link"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="portfolio-content">
-                            <h5>2nd Portfolio Item</h5>
-                            <p>Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.portfolio-item-wrapper -->
-                <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item-wrapper">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <%= image_tag 'photo (2).jpg' %>
-                            <div class="image-overlay"></div>
-                         <%= link_to image_tag 'photo (2).jpg', :rel => 'prettyPhoto[pp_gal]', :class => 'portfolio-zoom' %><i class="icon-eye-open"></i></a>
-                            <a href="portfolio-single.html" class="portfolio-link"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="portfolio-content">
-                            <h5>3rd Portfolio Item</h5>
-                            <p>Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.portfolio-item-wrapper -->
-                <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item-wrapper">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <%= image_tag 'photo (4).jpg' %>
-                            <div class="image-overlay"></div>
-                          <%= link_to image_tag 'photo (4).jpg', :rel => 'prettyPhoto[pp_gal]', :class => 'portfolio-zoom' %><i class="icon-eye-open"></i></a>
-                            <a href="portfolio-single.html" class="portfolio-link"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="portfolio-content">
-                            <h5>4th Portfolio Item</h5>
-                            <p>Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.portfolio-item-wrapper -->
-                <div class="col-xs-12 col-sm-6 col-md-4 portfolio-item-wrapper">
-                    <div class="portfolio-item">
-                        <div class="portfolio-thumb">
-                            <%= image_tag 'photo (5).jpg' %>
-                            <div class="image-overlay"></div>
-                            <%= link_to image_tag 'photo (5).jpg', :rel => 'prettyPhoto[pp_gal]', :class => 'portfolio-zoom' %><i class="icon-eye-open"></i></a>
-                            <a href="portfolio-single.html" class="portfolio-link"><i class="icon-link"></i></a>
-                        </div>
-                        <div class="portfolio-content">
-                            <h5>5th Portfolio Item</h5>
-                            <p>Nullam id dolor id nibh ultricies vehicula.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.portfolio-item-wrapper -->
-            </div>
-            <!-- /.caroufredsel-portfolio-container -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</section>
-<!-- /.colored-wrapper -->
-<section id="our-clients">
-    <div class="container wrapper-1">
-        <h5 class="subpage-title">
-            <span>Our Clients</span>
-            <!-- Controls -->
-            <span id="client-next" class="next"><i class="icon-angle-right"></i></span>
-            <span id="client-prev" class="prev"><i class="icon-angle-left"></i></span>
-        </h5>
-        <div class="row">
-            <div id="clients-wrapper">
-                <div class="col-xs-12 col-sm-4 col-md-3 client-wrapper">
-                    <a href="#"><img class="img-responsive" src="assets/img/clients/photo (1).jpg" alt="Client Image"></a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 client-wrapper">
-                    <a href="#"><img class="img-responsive" src="assets/img/clients/photo (2).jpg" alt="Client Image"></a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 client-wrapper">
-                    <a href="#"><img class="img-responsive" src="assets/img/clients/photo (3).jpg" alt="Client Image"></a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 client-wrapper">
-                    <a href="#"><img class="img-responsive" src="assets/img/clients/photo (4).jpg" alt="Client Image"></a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 client-wrapper">
-                    <a href="#"><img class="img-responsive" src="assets/img/clients/photo (5).jpg" alt="Client Image"></a>
-                </div>
-                <div class="col-xs-12 col-sm-4 col-md-3 client-wrapper">
-                    <a href="#"><img class="img-responsive" src="assets/img/clients/photo (6).jpg" alt="Client Image"></a>
-                </div>
-            </div>
-            <!-- /#clients-wrapper -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</section>
-<!-- /#our-clients -->
-<footer class="footer-1">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="widget about-us">
-                    <span class="footer-brand">Flat<span>Point.</span></span>
-                    <p>Lorem ipsum dolor sit amet, no consequat ullamcorper nec, te commune constituto intellegebat eam. Soleat populo id nec. Est in altera vocibus, et vim iudico adolescens, mel no discere mediocritatem. Nec ei sale honestatis, graeco melius eruditi qui et, id nam mucius maiorum. Pri diceret ornatus cu, dico quas aliquando vix ea, vix impetus invidunt honestatis id. An his everti animal.</p>
-                </div>
-                <!-- /.about-us -->
-            </div>
-            <!-- /.col-md-3 -->
-            <div class="col-md-3">
-                <div class="widget popular-posts">
-                    <h5 class="subpage-title">Popular Posts</h5>
-                    <ul class="recent-posts">
-                        <li>
-                            <img src="assets/img/blog/recent-posts/photo (1).jpg" alt="Post Image">
-                            <h5>
-                                <a href="blog.html">The Ultimate Guide to Adjustment Layers – Vibrance</a>
-                                <small>Posted July 20, 2013</small>
-                            </h5>
-                        </li>
-                        <li>
-                            <img src="assets/img/blog/recent-posts/photo (2).jpg" alt="Post Image">
-                            <h5>
-                                <a href="blog.html">Complete Guide to What’s New in Adobe Photoshop 14.1</a>
-                                <small>Posted July 15, 2013</small>
-                            </h5>
-                        </li>
-                        <li>
-                            <img src="assets/img/blog/recent-posts/photo (3).jpg" alt="Post Image">
-                            <h5>
-                                <a href="blog.html">How to Integrate Lightroom Into Your Photoshop Workflow</a>
-                                <small>Posted July 10, 2013</small>
-                            </h5>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.popular-posts -->
-            </div>
-            <!-- /.col-md-3 -->
-            <div class="col-md-3">
-                <div class="widget tagcloud">
-                    <h5 class="subpage-title">Some Tags</h5>
-                    <ul class="tagcloud-list">
-                        <li><a href="#">photoshop</a>  </li>
-                        <li><a href="#">html</a> </li>
-                        <li><a href="#">css</a>  </li>
-                        <li><a href="#">html5</a>  </li>
-                        <li><a href="#">css3</a> </li>
-                        <li><a href="#">illustration</a>  </li>
-                        <li><a href="#">javascript</a>  </li>
-                        <li><a href="#">jquery</a>  </li>
-                        <li><a href="#">bootstrap 2</a> </li>
-                        <li><a href="#">bootstrap 3</a>  </li>
-                        <li><a href="#">php</a>  </li>
-                        <li><a href="#">mysql</a> </li>
-                        <li><a href="#">wordpress</a>  </li>
-                        <li><a href="#">ajax</a>  </li>
-                        <li><a href="#">webmatrix</a>  </li>
-                    </ul>
-                </div>
-                <!-- /.tagcloud -->
-            </div>
-            <div class="col-md-3">
-                <div class="widget flickr-photos">
-                    <h5 class="subpage-title">Flickr Photos</h5>
-                    <ul class="flickr-photos-list"></ul>
-                </div>
-            </div>
-            <!-- /.flickr-photos -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</footer>
-<!-- /.footer-1 -->
-<footer class="footer-2">
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-6 footer-2-info-wrapper">
-                <p>FlatPoint © 2013. Powered by <a href="#">Firework</a></p>
-            </div>
-            <!-- /.footer-2-info -->
-            <div class="col-xs-6 social-link-wrapper">
-                <ul class="social-links">
-                    <li><a href="#"><i class="icon-facebook"></i></a></li>
-                    <li><a href="#"><i class="icon-google-plus"></i></a></li>
-                    <li><a href="#"><i class="icon-twitter"></i></a></li>
-                    <li><a href="#"><i class="icon-pinterest"></i></a></li>
-                    <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                    <li><a href="#"><i class="icon-dribbble"></i></a></li>
-                </ul>
-            </div>
-            <!-- /.social-links -->
-        </div>
-        <!-- /.row -->
-    </div>
-    <!-- /.container -->
-</footer>
-<!-- /.footer-2 -->
-</div>
-        <!-- Bootstrap JS & Others JavaScript Plugins
-        ================================================== -->
-        <!-- Placed At The End Of The Document So Page Loads Faster -->
-        <script src="assets/js/jquery-2.0.3.min.js"></script>
-        <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-        <script src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="assets/carouFredSel-6.2.1/jquery.carouFredSel-6.2.1.js"></script>
-        <script src="assets/prettyPhoto/js/jquery.prettyPhoto.js"></script>
-        <script src="assets/jflickrfeed/jflickrfeed.min.js"></script>
-        <script src="assets/UItoTop/js/easing.js"></script>
-        <script src="assets/UItoTop/js/jquery.ui.totop.min.js"></script>
-        <script src="assets/isotope-site/jquery.isotope.min.js"></script>
-        <script src="assets/FitVids.js/jquery.fitvids.js"></script>
+
+
         <script type="text/javascript">
         var tpj = jQuery;
         tpj.noConflict();

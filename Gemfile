@@ -8,6 +8,8 @@ gem 'pg'
 
 gem 'devise', '3.0.0'
 
+gem 'font-awesome-rails'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
